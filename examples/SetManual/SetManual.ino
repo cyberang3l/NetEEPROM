@@ -11,7 +11,7 @@ void setup() {
   byte gw[4] = { 192, 168, 1, 1 };
   byte subnet[4] = { 255, 255, 255, 0 };
 
-  NetEeprom.writeManualConfig(mac, ip, dns, gw, subnet);
+  NetEeprom.writeManualConfig(mac, ip, gw, subnet, dns);
 }
 
 void loop() {
